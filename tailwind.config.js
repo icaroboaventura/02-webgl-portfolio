@@ -17,5 +17,5 @@ module.exports = {
       "firacode-medium": ["firacode-medium", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }

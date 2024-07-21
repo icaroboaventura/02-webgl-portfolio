@@ -27,7 +27,7 @@ const Home = () => {
     }
   }, [language])
   return (
-    <div className=" bg-neutral-900 font-firacode-light text-neutral-50 relative">
+    <div className=" bg-neutral-900 font-firacode-light text-neutral-50 relative text-sm sm:text-base">
       <div className="w-full absolute top-0 z-50">
         <Navbar
           content={content}
@@ -35,7 +35,10 @@ const Home = () => {
         />
       </div>
       <main className="w-full h-svh">
-        <CanvasKeyboard content={content} />
+        <CanvasKeyboard
+          content={content}
+          language={language}
+        />
       </main>
     </div>
   )

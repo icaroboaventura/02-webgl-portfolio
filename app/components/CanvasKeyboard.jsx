@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import { Bloom, EffectComposer } from "@react-three/postprocessing"
 import Overlay from "./Overlay"
 
-const CanvasKeyboard = ({ content }) => {
+const CanvasKeyboard = ({ content, language }) => {
   return (
     <Canvas
       resize={{ debounce: 0 }}
@@ -29,7 +29,10 @@ const CanvasKeyboard = ({ content }) => {
         <ScrollControls
           pages={6}
           damping={0.25}>
-          <Overlay content={content} />
+          <Overlay
+            content={content}
+            language={language}
+          />
           <Keyboard />
         </ScrollControls>
         <EffectComposer>

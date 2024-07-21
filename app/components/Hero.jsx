@@ -1,38 +1,24 @@
-import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md"
+import { IoCaretDownOutline } from "react-icons/io5"
+import HeroCode from "./HeroCode"
+import ArrowCanvas from "./ArrowCanvas"
+import SectionCode from "./SectionCode"
 
-const Hero = ({ content }) => {
+const Hero = ({ content, language }) => {
   return (
-    <div>
-      <div className="font-firacode-medium text-xs sm:text-base">
-        <p className="px-[4%] sm:px-[10%] py-[80px] sm:py-[100px]">
-          <span className="text-red-500">if</span> <span className="text-purple-500">(</span>
-          <span className="text-blue-500">{content.heroCode[0]}</span>{" "}
-          <span className="text-red-500">===</span>{" "}
-          <span className="text-green-500">{content.heroCode[1]}</span>
-          <span className="text-purple-500">)</span> <span className="text-yellow-500">{"{"} </span>
-          <br />
-          console<span className="text-orange-500">.log</span>
-          <span className="text-purple-500">(</span>
-          <span className="text-green-500">"{content.heroCode[2]}"</span>
-          <span className="text-purple-500">)</span>; <br />
-          gsap<span className="text-orange-500">.to</span>
-          <span className="text-purple-500">(</span>
-          <span className="text-blue-500">{content.heroCode[0]}</span>
-          <span className="text-orange-500">.pos</span>,{" "}
-          <span className="text-yellow-500">{"{"}</span> x{":"}{" "}
-          <span className="text-blue-500">{content.heroCode[0]}</span>
-          <span className="text-orange-500">.orig</span> - 0.6{" "}
-          <span className="text-yellow-500">{"}"}</span>
-          <span className="text-purple-500">)</span>; <br />
-          <span className="text-purple-500">setTimeout(</span>(){" "}
-          <span className="text-red-500">{"=>"}</span> console
-          <span className="text-orange-500">.log</span>
-          <span className="text-purple-500">(</span>{" "}
-          <span className="text-green-500">"{content.heroCode[3]}"</span>
-          <span className="text-purple-500">)</span>, 100<span className="text-purple-500">)</span>;{" "}
-          <br />
-          <span className="text-yellow-500">{"}"}</span>
-        </p>
+    <div className="h-svh flex flex-col justify-between relative">
+      <div className="absolute top-0 sm:left-1/2 transform sm:-translate-x-1/2 px-[10px] sm:px-[100px]">
+        <SectionCode text={content.nav[0]} />
+      </div>
+      <div>
+        <HeroCode
+          content={content}
+          language={language}
+        />
+      </div>
+      <div className="mx-auto p-[50px] text-orange-500 ">
+        <div className="animate-bounce duration-500">
+          <IoCaretDownOutline fontSize={40} />
+        </div>
       </div>
     </div>
   )

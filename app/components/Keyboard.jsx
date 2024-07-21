@@ -26,7 +26,7 @@ const Keyboard = ({ props }) => {
   } else if (size.width <= 1500) {
     scale = size.width / 1600
   } else {
-    scale = size.width / 2000
+    scale = size.width / 2200
   }
 
   // Update timeline based on scroll position
@@ -41,25 +41,19 @@ const Keyboard = ({ props }) => {
     tl.current = gsap.timeline()
 
     tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 2, y: 0, z: 0 }, 0)
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 2, y: 0, z: Math.PI * 2 }, 1)
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 2, y: 0, z: Math.PI * 2 }, 2)
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 2, y: 0, z: 0 }, 3)
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 2, y: 0, z: 0 }, 4)
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 6, y: 0, z: 0 }, 5)
+    tl.current.to(ref.current.rotation, { duration: 3, x: -Math.PI / 2, y: 0, z: Math.PI * 2 }, 1)
+    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 3, y: 0, z: Math.PI * 2 }, 5)
 
     tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 0)
     tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 1)
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 2)
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 3)
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 4)
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 5)
+    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -6, z: 0 }, 5)
   }, [])
 
   // Material settings
   const keyboardMaterial = new MeshStandardMaterial({ color: keyboardColor })
   const plateMaterial = new MeshStandardMaterial({
     emissive: "#a21caf",
-    emissiveIntensity: 20,
+    emissiveIntensity: 23,
   })
 
   // Handle key hover effect
@@ -115,7 +109,7 @@ const Keyboard = ({ props }) => {
   return (
     <Float
       speed={3.5}
-      floatIntensity={1}>
+      floatIntensity={0}>
       <group
         ref={ref}
         {...props}
