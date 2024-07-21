@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  @font-face {
+    font-family: "firacode-bold";
+    src: url(/FiraCode-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "firacode-medium";
+    src: url(/FiraCode-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "firacode-regular";
+    src: url(/FiraCode-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "firacode-light";
+    src: url(/FiraCode-Light.ttf) format("truetype");
+  }
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
