@@ -4,7 +4,7 @@ import SectionCode from "./SectionCode"
 const AboutMe = ({ content }) => {
   return (
     <div className="relative flex items-start pt-[100px] sm:pt-[180px] px-[8%] gap-6 flex-col md:flex-row">
-      <div className="absolute top-0 sm:left-1/2 transform sm:-translate-x-1/2">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
         <SectionCode text={content.nav[1]} />
       </div>
       <div className="basis-1/2 w-full flex justify-center items-center">
@@ -13,9 +13,9 @@ const AboutMe = ({ content }) => {
           duration={0.5}
           delay={1}>
           <img
-            src="/aboutMeImg.jpg"
+            src={content.aboutMeImg}
             alt=""
-            className="w-1/3 md:w-full max-w-[400px] rounded-md opacity-50"
+            className="w-1/2 sm:w-full max-w-[400px] rounded-md opacity-50"
           />
         </Reveal>
       </div>

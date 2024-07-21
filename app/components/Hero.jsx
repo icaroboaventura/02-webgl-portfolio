@@ -1,12 +1,11 @@
 import { IoCaretDownOutline } from "react-icons/io5"
 import HeroCode from "./HeroCode"
-import ArrowCanvas from "./ArrowCanvas"
 import SectionCode from "./SectionCode"
 
 const Hero = ({ content, language }) => {
   return (
     <div className="h-svh flex flex-col justify-between relative">
-      <div className="absolute top-0 sm:left-1/2 transform sm:-translate-x-1/2 px-[10px] sm:px-[100px]">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 px-[10px] sm:px-[100px]">
         <SectionCode text={content.nav[0]} />
       </div>
       <div>

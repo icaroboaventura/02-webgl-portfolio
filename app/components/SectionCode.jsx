@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react"
 
 const getTextArray = (text) => [
-  { char: "<section>", className: "text-red-500" },
   { char: "<h2>", className: "text-purple-500" },
   { char: text, className: "" },
   { char: "</h2>", className: "text-purple-500" },
-  { char: "</section>", className: "text-red-500" },
 ]
 
 const SectionCode = ({ language, text }) => {
