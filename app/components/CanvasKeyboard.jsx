@@ -37,8 +37,8 @@ const CanvasKeyboard = ({ content, language }) => {
         </ScrollControls>
         <EffectComposer>
           <Bloom
-            intensity={0.4}
-            luminanceThreshold={2.8}
+            intensity={1}
+            luminanceThreshold={2.5}
             luminanceSmoothing={3.2}
             mipmapBlur={true}
           />

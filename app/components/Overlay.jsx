@@ -5,6 +5,7 @@ import { useThree } from "@react-three/fiber"
 import Hero from "./Hero"
 import AboutMe from "./AboutMe"
 import Technologies from "./Technologies"
+import Experience from "./Experience"
 
 const Overlay = ({ content, language }) => {
   return (
@@ -22,7 +23,9 @@ const Overlay = ({ content, language }) => {
         <section className="w-full h-svh overflow-hidden">
           <Technologies content={content} />
         </section>
-        <section className="w-3 h-svh bg-green-300"></section>
+        <section className="w-full h-svh overflow-hidden">
+          <Experience content={content} />
+        </section>
         <section className="w-3 h-svh bg-red-300"></section>
         <section className="w-3 h-svh bg-green-300"></section>
       </div>

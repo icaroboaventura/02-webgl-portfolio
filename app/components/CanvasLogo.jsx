@@ -8,7 +8,7 @@ const Logo = ({ props, logo, position, scale, rotation }) => {
   const { nodes } = useGLTF(logo)
   const groupRef = useRef()
 
-  const material = new MeshStandardMaterial({ color: "#a855f7" })
+  const material = new MeshStandardMaterial({ color: "#fafafa" })
   const bgMaterial = new MeshStandardMaterial({ color: "#171717" })
 
   const handleClick = () => {
@@ -51,11 +51,11 @@ const Logo = ({ props, logo, position, scale, rotation }) => {
 
 const CanvasLogo = ({ logo, position, scale, rotation }) => {
   return (
-    <div className="w-[150px] h-[150px]">
+    <div className="sm:w-[140px] sm:h-[140px] w-[80px] h-[80px] ">
       <Canvas
         resize={{ debounce: 0 }}
         shadows
-        camera={{ position: [0, 0, 10], fov: 20 }}
+        camera={{ position: [0, 0, 8], fov: 20 }}
         gl={{ preserveDrawingBuffer: true }}>
         <Suspense fallback={null}>
           <ambientLight intensity={10} />
