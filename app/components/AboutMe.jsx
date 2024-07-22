@@ -9,7 +9,7 @@ const AboutMe = ({ content }) => {
         <SectionCode text={content.nav[1]} />
       </div>
       <div className="bg-white relative bg-opacity-5  p-[2px] rounded-lg overflow-hidden">
-        <div className="animate-rotate absolute h-full w-full rounded-full bg-[conic-gradient(#8800ff_20deg,transparent_120deg)]"></div>
+        {/* <div className="animate-rotate absolute h-full w-full rounded-full bg-[conic-gradient(#8800ff_20deg,transparent_120deg)]"></div> */}
         <div className="flex-col md:flex-row flex items-center gap-6 bg-neutral-900 relative p-[30px]">
           <div className="basis-1/2 w-full flex justify-center items-center relative">
             <Reveal
