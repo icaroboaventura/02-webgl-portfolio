@@ -37,7 +37,7 @@ const SectionCode = ({ language, text }) => {
   }, [index, textArray])
 
   return (
-    <p className="pt-[60px]">
+    <h2 className="pt-[60px]">
       {displayedText.map((item, i) =>
         item.char === "<br />" ? (
           <br key={i} />
@@ -50,7 +50,7 @@ const SectionCode = ({ language, text }) => {
         )
       )}
       <span className="animate-ping duration-500">|</span>
-    </p>
+    </h2>
   )
 }
 

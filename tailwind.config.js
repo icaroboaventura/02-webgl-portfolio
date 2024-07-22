@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      transitionTimingFunction: {
+        "minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",
+      },
       backgroundImage: {},
     },
     fontFamily: {
@@ -23,6 +26,18 @@ module.exports = {
       rotate: {
         "0%": { transform: "rotate(0deg) scale(10)" },
         "100%": { transform: "rotate(-360deg) scale(10)" },
+      },
+      "reveal-up": {
+        "0%": { opacity: "0", transform: "translateY(80%)" },
+        "100%": { opacity: "1", transform: "translateY(0)" },
+      },
+      "reveal-down": {
+        "0%": { opacity: "0", transform: "translateY(-80%)" },
+        "100%": { opacity: "1", transform: "translateY(0)" },
+      },
+      "content-blur": {
+        "0%": { filter: "blur(0.3rem)" },
+        "100%": { filter: "blur(0)" },
       },
     },
   },

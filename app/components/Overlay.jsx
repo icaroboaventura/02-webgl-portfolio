@@ -6,6 +6,8 @@ import Hero from "./Hero"
 import AboutMe from "./AboutMe"
 import Technologies from "./Technologies"
 import Experience from "./Experience"
+import Projects from "./Projects"
+import Contact from "./Contact"
 
 const Overlay = ({ content, language }) => {
   return (
@@ -26,8 +28,12 @@ const Overlay = ({ content, language }) => {
         <section className="w-full h-svh overflow-hidden">
           <Experience content={content} />
         </section>
-        <section className="w-3 h-svh bg-red-300"></section>
-        <section className="w-3 h-svh bg-green-300"></section>
+        <section className="w-full h-svh overflow-hidden">
+          <Projects content={content} />
+        </section>
+        <section className="w-full h-svh overflow-hidden">
+          <Contact content={content} />
+        </section>
       </div>
     </Scroll>
   )
