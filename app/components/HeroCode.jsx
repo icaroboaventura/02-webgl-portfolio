@@ -74,7 +74,7 @@ const HeroCode = ({ content, language }) => {
   }, [index, textArray])
 
   return (
-    <p className="px-[10px] sm:px-[100px] py-[90px] sm:py-[100px] font-firacode-light">
+    <p className="font-firacode-light">
       {displayedText.map((item, i) =>
         item.char === "<br />" ? (
           <br key={i} />

@@ -37,7 +37,7 @@ const SectionCode = ({ language, text }) => {
   }, [index, textArray])
 
   return (
-    <h2 className="pt-[60px]">
+    <h2 className="mb-3">
       {displayedText.map((item, i) =>
         item.char === "<br />" ? (
           <br key={i} />

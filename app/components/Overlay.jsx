@@ -19,19 +19,19 @@ const Overlay = ({ content, language }) => {
             language={language}
           />
         </section>
-        <section className="w-full h-svh overflow-hidden">
+        <section className="w-full h-svh overflow-hidden flex justify-center items-center">
           <AboutMe content={content} />
         </section>
-        <section className="w-full h-svh overflow-hidden">
+        <section className="w-full h-svh overflow-hidden flex justify-center items-center">
           <Technologies content={content} />
         </section>
-        <section className="w-full h-svh overflow-hidden">
+        <section className="w-full h-svh overflow-hidden flex justify-center items-center">
           <Experience content={content} />
         </section>
-        <section className="w-full h-svh overflow-hidden">
+        <section className="w-full h-svh overflow-hidden flex justify-center items-center">
           <Projects content={content} />
         </section>
-        <section className="w-full h-svh overflow-hidden">
+        <section className="w-full h-svh overflow-hidden flex justify-center items-center">
           <Contact content={content} />
         </section>
       </div>

@@ -1,23 +1,29 @@
 import { IoCaretDownOutline } from "react-icons/io5"
 import HeroCode from "./HeroCode"
 import SectionCode from "./SectionCode"
+import { motion } from "framer-motion"
 
 const Hero = ({ content, language }) => {
   return (
-    <div className="h-svh flex flex-col justify-between relative">
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 px-[10px] sm:px-[100px]">
-        <SectionCode text={content.nav[0]} />
-      </div>
-      <div>
+    <div className="h-svh flex items-end relative">
+      <div className=" absolute top-[10%] pl-[5%]">
         <HeroCode
           content={content}
           language={language}
         />
       </div>
       <div className="mx-auto p-[50px] text-orange-500 ">
-        <div className="animate-bounce duration-500">
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+            repeat: Infinity,
+          }}>
           <IoCaretDownOutline fontSize={40} />
-        </div>
+        </motion.div>
       </div>
     </div>
   )

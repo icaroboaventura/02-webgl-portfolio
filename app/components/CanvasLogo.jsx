@@ -27,6 +27,7 @@ const Logo = ({ props, logo, position, scale, rotation }) => {
         dispose={null}
         ref={groupRef}
         onPointerOver={handleClick}
+        onClick={handleClick}
         rotation={[0, -Math.PI / 2, 0]}>
         <mesh
           castShadow

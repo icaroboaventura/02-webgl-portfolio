@@ -40,20 +40,14 @@ const Keyboard = ({ props }) => {
   useLayoutEffect(() => {
     tl.current = gsap.timeline()
 
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 2, y: 0, z: 0 }, 0)
-    tl.current.to(ref.current.rotation, { duration: 3, x: -Math.PI / 2, y: 0, z: Math.PI * 2 }, 1)
-    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI / 3, y: 0, z: Math.PI * 2 }, 5)
-
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 0)
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -9, z: 0 }, 1)
-    tl.current.to(ref.current.position, { duration: 1, x: 0, y: -6, z: 0 }, 5)
+    tl.current.to(ref.current.rotation, { duration: 1, x: Math.PI * 2, y: 0, z: 0 }, 0)
   }, [])
 
   // Material settings
   const keyboardMaterial = new MeshStandardMaterial({ color: keyboardColor })
   const plateMaterial = new MeshStandardMaterial({
     emissive: "#a21caf",
-    emissiveIntensity: 23,
+    emissiveIntensity: 20,
   })
 
   // Handle key hover effect

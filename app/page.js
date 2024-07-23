@@ -32,6 +32,7 @@ const Home = () => {
         <Navbar
           content={content}
           changeLanguage={setLanguage}
+          language={language}
         />
       </div>
       <main className="w-full h-svh">

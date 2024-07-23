@@ -1,8 +1,12 @@
+import { Lightformer } from "@react-three/drei"
+import { Linkedin } from "lucide-react"
+
 export const ContentENG = {
+  footerText: "Let's build something amazing together!",
   heroCode: [["key"], ["'any'"], ["Keyboard: 'Ouch!'"], ["Key: 'Tickles!'"]],
   nav: [["home"], ["aboutMe"], ["technologies"], ["experience"], ["projects"], ["contact"]],
   aboutMeText:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo distinctio aliquam assumenda hic illo accusantium odio recusandae libero ad sit quis reprehenderit perspiciatis aperiam quaerat officiis sunt dignissimos laboriosam nulla.",
+    "Hi! I'm a Frontend Developer and part-time Game Development student. I love blending 3D objects into my web projects, creating immersive and interactive experiences. With a passion for design and innovation, I'm dedicated to crafting visually stunning and functional web interfaces.",
   professional: [
     {
       logo: "/telekom.png",
@@ -69,12 +73,27 @@ export const ContentENG = {
       ],
     },
   ],
+  projects: [
+    {
+      name: "Test Name 1",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
+      image: "/project2.png",
+      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+    },
+    {
+      name: "Test Name 2",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
+      image: "/project2.png",
+      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+    },
+  ],
 }
 export const ContentDE = {
+  footerText: "Lass uns gemeinsam etwas Großartiges schaffen!",
   heroCode: [["taste"], ["'irgendeine'"], ["Tastatur: 'Aua!'"], ["Taste: 'Kitzelt!'"]],
   nav: [["home"], ["überMich"], ["technologien"], ["erfahrung"], ["projekte"], ["kontakt"]],
   aboutMeText:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo! Quo magni facere, explicabo distinctio aliquam assumenda hic illo accusantium odio recusandae libero ad sit quis reprehenderit perspiciatis aperiam quaerat officiis sunt dignissimos laboriosam nulla.",
+    "Hallo! Ich bin Frontend-Entwickler und Teilzeitstudent der Spieleentwicklung. Ich liebe es, 3D-Objekte in meine Webprojekte einzubinden und immersive, interaktive Erlebnisse zu schaffen. Mit einer Leidenschaft für Design und Innovation widme ich mich der Gestaltung visuell beeindruckender und funktionaler Webinterfaces.",
   experienceTitle: ["Bildungsweg", "Beruflich"],
   professional: [
     {
@@ -142,12 +161,27 @@ export const ContentDE = {
       ],
     },
   ],
+  projects: [
+    {
+      name: "Test Name 1",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
+      image: "/project2.png",
+      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+    },
+    {
+      name: "Test Name 2",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
+      image: "/project2.png",
+      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+    },
+  ],
 }
 export const ContentPT = {
+  footerText: "Vamos construir algo incrível juntos!",
   heroCode: [["tecla"], ["'qualquer'"], ["Teclado: 'Ai!'"], ["Tecla: 'Cócegas!'"]],
   nav: [["home"], ["sobreMim"], ["tecnologias"], ["experiência"], ["projetos"], ["contato"]],
   aboutMeText:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo! Quo magni facere, explicabo distinctio aliquam assumenda hic illo accusantium odio recusandae libero ad sit quis reprehenderit perspiciatis aperiam quaerat officiis sunt dignissimos laboriosam nulla.",
+    "Olá! Sou Desenvolvedor Frontend e estudante de Desenvolvimento de Jogos em meio período. Adoro incorporar objetos 3D em meus projetos web, criando experiências imersivas e interativas. Com paixão por design e inovação, estou dedicado a criar interfaces web visualmente deslumbrantes e funcionais.",
   experienceTitle: ["Educacional", "Profissional"],
   professional: [
     {
@@ -215,8 +249,27 @@ export const ContentPT = {
       ],
     },
   ],
+  projects: [
+    {
+      name: "Test Name 1",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
+      image: "/project2.png",
+      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+    },
+    {
+      name: "Test Name 2",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
+      image: "/project2.png",
+      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+    },
+  ],
 }
 export const assets = {
+  contact: {
+    linkedin: "https://www.linkedin.com/in/icaroboaventura/",
+    email: "contact@icaroboaventura.de",
+    github: "https://github.com/icaroboaventura",
+  },
   aboutMeImg: "/aboutMeImg.png",
   pathLogos: [
     {
