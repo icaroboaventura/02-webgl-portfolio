@@ -13,7 +13,7 @@ const Technologies = ({ content }) => {
             x={-75}
             duration={0.5}
             delay={0.3}>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-10">
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-10">
               {assets.pathLogos.map((logo, index) => (
                 <CanvasLogo
                   key={index}

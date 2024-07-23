@@ -52,7 +52,7 @@ const Logo = ({ props, logo, position, scale, rotation }) => {
 
 const CanvasLogo = ({ logo, position, scale, rotation }) => {
   return (
-    <div className="sm:w-[140px] sm:h-[140px] w-[80px] h-[80px] ">
+    <div className="md:w-[140px] md:h-[140px] w-[80px] h-[80px] ">
       <Canvas
         resize={{ debounce: 0 }}
         shadows

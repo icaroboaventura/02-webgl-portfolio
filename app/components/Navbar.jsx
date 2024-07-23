@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 import { useEffect, useState } from "react"
 
@@ -15,9 +16,14 @@ const Navbar = ({ changeLanguage, language }) => {
   return (
     <nav className="flex items-center justify-between px-8 py-4">
       <div>
-        <p>
-          Icaro <span className=" text-purple-500">Boaventura</span>
-        </p>
+        <Image
+          src="/logo.png"
+          alt="Icaro Boaventura"
+          priority={true}
+          width={40}
+          height={40}
+          className=""
+        />
       </div>
       <div className="flex items-center justify-center">
         {lan.map((tab) => (

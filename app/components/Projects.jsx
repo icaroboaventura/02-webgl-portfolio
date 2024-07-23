@@ -4,7 +4,7 @@ import SectionCode from "./SectionCode"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-
+import { FaGithubSquare } from "react-icons/fa"
 const Projects = ({ content }) => {
   const [activeTab, setActiveTab] = useState(content.projects[0].name)
 
@@ -63,12 +63,20 @@ const Projects = ({ content }) => {
                     <div>
                       <h3 className=" font-firacode-medium mb-2">{project.name}</h3>
                       <p className=" text-xs sm:text-sm mb-2">{project.text}</p>
-                      <Link
-                        className=" text-xs sm:text-sm px-2 py-1 border border-neutral-50 rounded-lg hover:bg-neutral-50 hover:text-neutral-800 transition-colors duration-500"
-                        href={`${project.link}`}
-                        target="_blank">
-                        Link
-                      </Link>
+                      <div className="flex items-center justify-center gap-2">
+                        <Link
+                          className=" text-xs sm:text-sm px-2 py-1 border border-neutral-50 rounded-lg hover:bg-neutral-50 hover:text-neutral-800 transition-colors duration-500"
+                          href={`${project.link}`}
+                          target="_blank">
+                          Live
+                        </Link>
+                        <Link
+                          className=" text-xs sm:text-sm px-2 py-1 border border-neutral-50 rounded-lg hover:bg-neutral-50 hover:text-neutral-800 transition-colors duration-500"
+                          href={`${project.git}`}
+                          target="_blank">
+                          Code
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 ) : (

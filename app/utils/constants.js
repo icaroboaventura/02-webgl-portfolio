@@ -1,12 +1,9 @@
-import { Lightformer } from "@react-three/drei"
-import { Linkedin } from "lucide-react"
-
 export const ContentENG = {
   footerText: "Let's build something amazing together!",
   heroCode: [["key"], ["'any'"], ["Keyboard: 'Ouch!'"], ["Key: 'Tickles!'"]],
   nav: [["home"], ["aboutMe"], ["technologies"], ["experience"], ["projects"], ["contact"]],
   aboutMeText:
-    "Hi! I'm a Frontend Developer and part-time Game Development student. I love blending 3D objects into my web projects, creating immersive and interactive experiences. With a passion for design and innovation, I'm dedicated to crafting visually stunning and functional web interfaces.",
+    "Hi! I'm Icaro a Frontend Developer and part-time Game Development student. I love blending 3D objects into my web projects, creating immersive and interactive experiences. With a passion for design and innovation, I'm dedicated to crafting visually stunning and functional web interfaces.",
   professional: [
     {
       logo: "/telekom.png",
@@ -75,16 +72,18 @@ export const ContentENG = {
   ],
   projects: [
     {
-      name: "Test Name 1",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
-      image: "/project2.png",
-      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+      name: "HVPOP",
+      text: "The veterinarian clinic website is built using Next.js, Tailwind CSS, and Three.js, with a content management system powered by Sanity. As of now, the content is generic and awaits final inputs from the client.",
+      image: "/pop.png",
+      link: "https://hvpop.vercel.app/",
+      git: "https://github.com/icaroboaventura/01-vetpop",
     },
     {
-      name: "Test Name 2",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
-      image: "/project2.png",
-      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+      name: "Event Pilot",
+      text: "Event Pilot is a fullstack events application developed as a bootcamp final project. As the frontend developer, I contributed to creating a dynamic and user-friendly interface using the MERN stack.",
+      image: "/eventpilot.png",
+      link: "https://event-pilot.org/",
+      git: "https://github.com/icaroboaventura/00-eventpilot",
     },
   ],
 }
@@ -93,7 +92,7 @@ export const ContentDE = {
   heroCode: [["taste"], ["'irgendeine'"], ["Tastatur: 'Aua!'"], ["Taste: 'Kitzelt!'"]],
   nav: [["home"], ["überMich"], ["technologien"], ["erfahrung"], ["projekte"], ["kontakt"]],
   aboutMeText:
-    "Hallo! Ich bin Frontend-Entwickler und Teilzeitstudent der Spieleentwicklung. Ich liebe es, 3D-Objekte in meine Webprojekte einzubinden und immersive, interaktive Erlebnisse zu schaffen. Mit einer Leidenschaft für Design und Innovation widme ich mich der Gestaltung visuell beeindruckender und funktionaler Webinterfaces.",
+    "Hallo! Mein Name ist Icaro, bin Frontend-Entwickler und Teilzeitstudent der Spieleentwicklung. Ich liebe es, 3D-Objekte in meine Webprojekte einzubinden und immersive, interaktive Erlebnisse zu schaffen. Mit einer Leidenschaft für Design und Innovation widme ich mich der Gestaltung visuell beeindruckender und funktionaler Webinterfaces.",
   experienceTitle: ["Bildungsweg", "Beruflich"],
   professional: [
     {
@@ -163,16 +162,18 @@ export const ContentDE = {
   ],
   projects: [
     {
-      name: "Test Name 1",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
-      image: "/project2.png",
-      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+      name: "HVPOP",
+      text: "Die Website der Tierklinik wurde mit Next.js, Tailwind CSS und Three.js erstellt und verfügt über ein Content-Management-System, das von Sanity betrieben wird. Derzeit ist der Inhalt generisch und wartet auf die endgültigen Eingaben des Kunden.",
+      image: "/pop.png",
+      link: "https://hvpop.vercel.app/",
+      git: "https://github.com/icaroboaventura/01-vetpop",
     },
     {
-      name: "Test Name 2",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
-      image: "/project2.png",
-      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+      name: "Event Pilot",
+      text: "Event Pilot ist eine Fullstack-Event-Anwendung, die als Abschlussprojekt eines Bootcamps entwickelt wurde. Als Frontend-Entwickler habe ich zur Erstellung einer dynamischen und benutzerfreundlichen Oberfläche unter Verwendung des MERN-Stacks.",
+      image: "/eventpilot.png",
+      link: "https://event-pilot.org/",
+      git: "https://github.com/icaroboaventura/00-eventpilot",
     },
   ],
 }
@@ -181,7 +182,7 @@ export const ContentPT = {
   heroCode: [["tecla"], ["'qualquer'"], ["Teclado: 'Ai!'"], ["Tecla: 'Cócegas!'"]],
   nav: [["home"], ["sobreMim"], ["tecnologias"], ["experiência"], ["projetos"], ["contato"]],
   aboutMeText:
-    "Olá! Sou Desenvolvedor Frontend e estudante de Desenvolvimento de Jogos em meio período. Adoro incorporar objetos 3D em meus projetos web, criando experiências imersivas e interativas. Com paixão por design e inovação, estou dedicado a criar interfaces web visualmente deslumbrantes e funcionais.",
+    "Olá! Meu nome é Icaro, sou Desenvolvedor Frontend e estudante de Desenvolvimento de Jogos em meio período. Adoro incorporar objetos 3D em meus projetos web, criando experiências imersivas e interativas. Com paixão por design e inovação, estou dedicado a criar interfaces web visualmente deslumbrantes e funcionais.",
   experienceTitle: ["Educacional", "Profissional"],
   professional: [
     {
@@ -251,16 +252,18 @@ export const ContentPT = {
   ],
   projects: [
     {
-      name: "Test Name 1",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
-      image: "/project2.png",
-      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+      name: "HVPOP",
+      text: "O site da clínica veterinária foi construído usando Next.js, Tailwind CSS e Three.js, com um sistema de gerenciamento de conteúdo alimentado pelo Sanity. No momento, o conteúdo é genérico e aguarda os inputs finais do cliente.",
+      image: "/pop.png",
+      link: "https://hvpop.vercel.app/",
+      git: "https://github.com/icaroboaventura/01-vetpop",
     },
     {
-      name: "Test Name 2",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptas, quam autem, dolorem ut beatae pariatur necessitatibus excepturi aspernatur, nobis molestiae nemo Quo magni facere, explicabo.",
-      image: "/project2.png",
-      link: "https://www.virtualbadge.io/certificate-validator?credential=ee5f2974-73a2-48a8-b19c-86ee48090bdc",
+      name: "Event Pilot",
+      text: "Event Pilot é uma aplicação de eventos fullstack desenvolvida como projeto final de um bootcamp. Como desenvolvedor frontend, contribui para a criação de uma interface dinâmica e amigável, utilizando a stack MERN.",
+      image: "/eventpilot.png",
+      link: "https://event-pilot.org/",
+      git: "https://github.com/icaroboaventura/00-eventpilot",
     },
   ],
 }
