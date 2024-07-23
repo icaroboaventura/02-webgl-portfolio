@@ -18,7 +18,8 @@ const AboutMe = ({ content }) => {
             <div className="w-full flex items-center justify-center">
               <Image
                 src={assets.aboutMeImg}
-                alt=""
+                alt="Icaro Boaventura"
+                priority={true}
                 width={500}
                 height={500}
                 className="w-1/2 sm:w-full max-w-[400px] rounded-lg opacity-50"

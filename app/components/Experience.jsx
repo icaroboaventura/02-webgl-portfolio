@@ -24,15 +24,15 @@ const Experience = ({ content }) => {
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`${
-                activeTab === tab && "text-neutral-900 "
+                activeTab === tab && "text-neutral-50 "
               } px-4 py-2 relative rounded-lg max-w-[400px] lg:w-[400px]`}>
               {activeTab === tab && (
                 <motion.span
                   layoutId="bubble"
-                  className={`absolute inset-0 -z-10 bg-neutral-50 rounded-lg`}
+                  className={`absolute inset-0 -z-10 border-neutral-50 border rounded-lg`}
                   transition={{
                     type: "spring",
-                    bounce: 0.5,
+                    bounce: 0.3,
                     duration: 0.5,
                   }}
                 />
@@ -47,7 +47,7 @@ const Experience = ({ content }) => {
           duration={0.5}
           delay={0.3}>
           {activeTab === content.experienceTitle[0] ? (
-            <div className="text-center mt-2 flex flex-col items-center gap-2 text-neutral-900  min-h-[400px] max-w-[800px] lg:w-[800px] bg-neutral-50 rounded-lg p-4">
+            <div className="text-center mt-2 flex flex-col items-center gap-2 text-neutral-50  min-h-[400px] max-w-[800px] lg:w-[800px] border-neutral-50 border rounded-lg p-4">
               {content.educational.map((edu, index) => (
                 <div
                   key={index}
@@ -62,7 +62,7 @@ const Experience = ({ content }) => {
                   )}
                   {edu.link[0].length !== 0 ? (
                     <Link
-                      className=" text-xs sm:text-sm px-2 py-1 border border-neutral-900 rounded-lg hover:bg-neutral-900 hover:text-neutral-50 transition-colors duration-500"
+                      className=" text-xs sm:text-sm px-2 py-1 border border-neutral-50 rounded-lg hover:bg-neutral-50 hover:text-neutral-900 transition-colors duration-500"
                       href={edu.link[1]}
                       target="_blank">
                       {edu.link[0]}
@@ -72,7 +72,7 @@ const Experience = ({ content }) => {
                   )}
 
                   {index !== content.educational.length - 1 ? (
-                    <div className="w-full bg-neutral-200 h-[1px]"></div>
+                    <div className="w-full bg-neutral-50 bg-opacity-20 h-[1px] my-2"></div>
                   ) : (
                     ""
                   )}
@@ -80,7 +80,7 @@ const Experience = ({ content }) => {
               ))}
             </div>
           ) : (
-            <div className="mt-2 flex flex-col gap-2 text-neutral-900  min-h-[400px] max-w-[800px] lg:w-[800px] bg-neutral-50 rounded-lg p-4">
+            <div className="mt-2 flex flex-col gap-2 text-neutral-50  min-h-[400px] max-w-[800px] lg:w-[800px] border-neutral-50 border rounded-lg p-4">
               {content.professional.map((pro, index) => (
                 <div
                   key={index}
@@ -92,12 +92,12 @@ const Experience = ({ content }) => {
                     <div
                       key={index}
                       className="flex items-center gap-2">
-                      <div className="w-1 h-1 bg-neutral-900 rounded-full"></div>
+                      <div className="w-1 h-1 bg-neutral-50 rounded-full"></div>
                       <p className=" text-xs sm:text-sm">{resp}</p>
                     </div>
                   ))}
                   {index !== content.professional.length - 1 ? (
-                    <div className="w-full bg-neutral-200 h-[1px]"></div>
+                    <div className="w-full bg-neutral-50 h-[1px]"></div>
                   ) : (
                     ""
                   )}
