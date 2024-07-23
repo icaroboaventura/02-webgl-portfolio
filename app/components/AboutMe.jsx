@@ -1,6 +1,7 @@
 import Reveal from "./Reveal"
 import SectionCode from "./SectionCode"
 import { assets } from "../utils/constants"
+import Image from "next/image"
 
 const AboutMe = ({ content }) => {
   return (
@@ -15,9 +16,11 @@ const AboutMe = ({ content }) => {
             duration={0.5}
             delay={0.3}>
             <div className="w-full flex items-center justify-center">
-              <img
+              <Image
                 src={assets.aboutMeImg}
                 alt=""
+                width={500}
+                height={500}
                 className="w-1/2 sm:w-full max-w-[400px] rounded-lg opacity-50"
               />
             </div>

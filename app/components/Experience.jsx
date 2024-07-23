@@ -88,8 +88,10 @@ const Experience = ({ content }) => {
                   <h3 className=" font-firacode-medium">{pro.company}</h3>
                   <p className=" text-xs sm:text-sm">{pro.duration}</p>
                   <p className=" text-xs sm:text-sm font-firacode-medium">{pro.title}</p>
-                  {pro.responsibilities.map((resp) => (
-                    <div className="flex items-center gap-2">
+                  {pro.responsibilities.map((resp, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-2">
                       <div className="w-1 h-1 bg-neutral-900 rounded-full"></div>
                       <p className=" text-xs sm:text-sm">{resp}</p>
                     </div>
