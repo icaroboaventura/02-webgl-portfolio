@@ -40,7 +40,7 @@ const Keyboard = ({ props }) => {
   useLayoutEffect(() => {
     tl.current = gsap.timeline()
 
-    tl.current.to(ref.current.rotation, { duration: 1, x: Math.PI * 2, y: 0, z: 0 }, 0)
+    tl.current.to(ref.current.rotation, { duration: 1, x: -Math.PI * 2, y: 0, z: 0 }, 0)
   }, [])
 
   // Material settings
