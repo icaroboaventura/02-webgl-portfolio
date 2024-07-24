@@ -3,7 +3,7 @@ export const ContentENG = {
   heroCode: [["key"], ["'any'"], ["Keyboard: 'Ouch!'"], ["Key: 'Tickles!'"]],
   nav: [["home"], ["aboutMe"], ["technologies"], ["experience"], ["projects"], ["contact"]],
   aboutMeText:
-    "Hi! I'm Icaro a Frontend Developer and part-time Game Development student. I love blending 3D objects into my web projects, creating immersive and interactive experiences. With a passion for design and innovation, I'm dedicated to crafting visually stunning and functional web interfaces.",
+    "Hi! I'm Icaro a Web Developer and part-time Game Development student. I love blending 3D objects into my web projects, creating immersive and interactive experiences. With a passion for design and innovation, I'm dedicated to crafting visually stunning and functional web interfaces.",
   professional: [
     {
       logo: "/telekom.png",
@@ -92,7 +92,7 @@ export const ContentDE = {
   heroCode: [["taste"], ["'irgendeine'"], ["Tastatur: 'Aua!'"], ["Taste: 'Kitzelt!'"]],
   nav: [["home"], ["überMich"], ["technologien"], ["erfahrung"], ["projekte"], ["kontakt"]],
   aboutMeText:
-    "Hallo! Mein Name ist Icaro, bin Frontend-Entwickler und Teilzeitstudent der Spieleentwicklung. Ich liebe es, 3D-Objekte in meine Webprojekte einzubinden und immersive, interaktive Erlebnisse zu schaffen. Mit einer Leidenschaft für Design und Innovation widme ich mich der Gestaltung visuell beeindruckender und funktionaler Webinterfaces.",
+    "Hallo! Mein Name ist Icaro, bin Web-Entwickler und Teilzeitstudent der Spieleentwicklung. Ich liebe es, 3D-Objekte in meine Webprojekte einzubinden und immersive, interaktive Erlebnisse zu schaffen. Mit einer Leidenschaft für Design und Innovation widme ich mich der Gestaltung visuell beeindruckender und funktionaler Webinterfaces.",
   experienceTitle: ["Bildungsweg", "Beruflich"],
   professional: [
     {
@@ -182,7 +182,7 @@ export const ContentPT = {
   heroCode: [["tecla"], ["'qualquer'"], ["Teclado: 'Ai!'"], ["Tecla: 'Cócegas!'"]],
   nav: [["home"], ["sobreMim"], ["tecnologias"], ["experiência"], ["projetos"], ["contato"]],
   aboutMeText:
-    "Olá! Meu nome é Icaro, sou Desenvolvedor Frontend e estudante de Desenvolvimento de Jogos em meio período. Adoro incorporar objetos 3D em meus projetos web, criando experiências imersivas e interativas. Com paixão por design e inovação, estou dedicado a criar interfaces web visualmente deslumbrantes e funcionais.",
+    "Olá! Meu nome é Icaro, sou Desenvolvedor Web e estudante de Desenvolvimento de Jogos em meio período. Adoro incorporar objetos 3D em meus projetos web, criando experiências imersivas e interativas. Com paixão por design e inovação, estou dedicado a criar interfaces web visualmente deslumbrantes e funcionais.",
   experienceTitle: ["Educacional", "Profissional"],
   professional: [
     {
