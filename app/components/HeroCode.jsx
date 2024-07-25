@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react"
+import { motion } from "framer-motion"
+import { IoCaretDownOutline } from "react-icons/io5"
 
 const getTextArray = (heroCode) => [
   { char: "if", className: "text-red-500" },
@@ -86,7 +88,17 @@ const HeroCode = ({ content, language }) => {
           </span>
         )
       )}
-      <span className="animate-ping duration-500">|</span>
+      <motion.span
+        animate={{
+          opacity: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+          repeat: Infinity,
+        }}>
+        |
+      </motion.span>
     </p>
   )
 }
